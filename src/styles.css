@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%; /* Set base font size to 16px */
+}
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+    cursor: pointer;
+}
+button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default border */
+    padding: 0; /* Remove default padding */
+    font: inherit; /* Inherit font properties */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3em;
+    font-weight: 300;
+}
+h1{
+    font-size: 26px;
+}
+ul, ol {
+    list-style: none; /* Remove default list styles */
+}
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+input, textarea {
+    font-family: inherit; /* Inherit font properties */
+    font-size: inherit; /* Inherit font size */
+}

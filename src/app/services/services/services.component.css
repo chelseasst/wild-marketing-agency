@@ -1,0 +1,56 @@
+.services-section {
+    text-align: center;
+    padding: 2rem 1.8rem;
+}
+
+.content-container {
+    padding-bottom: 5rem;
+}
+
+.heading-2 {
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: 400;
+
+}
+
+.image-container {
+    padding-bottom: 1.5rem;
+}
+
+.image-container img {
+    width: 250px;
+}
+
+.heading-4 {
+    font-size: 22px;
+    padding-bottom: 1.5rem;
+    text-decoration: underline;
+    font-weight: 400;
+
+}
+
+.text-container p {
+    font-size: 20px;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width:700px) {
+    .solutions-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .content-container {
+        flex: 1 1 30%;
+    }
+
+    .heading-2 {
+        font-size: 48px;
+    }
+}

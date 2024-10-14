@@ -1,0 +1,24 @@
+<header class="header-mobile">
+    <div class="logo-container">
+        <a href="">
+            <img src="assets/images/wild-logo.png" alt="Wild Marketing Agency Logo">
+        </a>
+    </div>
+
+    <button class="menu-toggle" (click)="toggleNav()">
+        <a href="#"><img src="assets/images/menu-icon.png" alt=""></a>
+    </button>
+
+    <nav class="nav" *ngIf="isNavOpen">
+        <ul>
+            <li><a href="#home" (click)="toggleNav()">Home</a></li>
+            <li><a href="#about-us" (click)="toggleNav()">About us</a></li>
+            <li><a href="#our-services" (click)="toggleNav()">Our Services</a></li>
+            <li><a href="#contact-us" (click)="toggleNav()">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <button class="close-icon-container" *ngIf="isNavOpen" (click)="toggleNav()">
+        <a href=""><img src="assets/images/close-menu.png" alt=""></a>
+    </button>
+</header>
