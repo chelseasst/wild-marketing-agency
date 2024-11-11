@@ -1,0 +1,281 @@
+.why-us-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(148deg, rgba(236, 232, 221, 0.9556135770234987) 23%, rgba(26, 58, 24, 1) 80%);
+}
+
+.why-us-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.why-us-text p {
+    padding: 1em;
+    line-height: 1.4;
+}
+
+.heading-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pop {
+    animation: pop 2s ease-out;
+}
+
+.slide {
+    animation: slide 2s ease-out;
+}
+
+.why-us-carousel {
+    width: 100%;
+    padding-top: 3.1em;
+    padding-bottom: 3.1em;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 450px;
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+}
+
+.carousel-container-animate {
+    opacity: 1;
+    transform: scale(1);
+    animation: popAnimation 0.6s ease forwards;
+}
+
+.insta-account {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 1em 0.5em;
+    border-bottom: 1px solid white;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    object-fit: cover;
+}
+
+.profile-pic:hover {
+    cursor: pointer;
+}
+
+.insta-account a {
+    font-size: 13px;
+    padding-left: 5px;
+    color: white;
+}
+
+.insta-account a:hover {
+    text-decoration: underline;
+}
+
+.insta-account p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.article-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 0.1em;
+    overflow-x: scroll;
+    overscroll-behavior: contain;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    touch-action: pan-x;
+    background-color: white;
+}
+
+.article -container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.actions-container {
+    height: 40px;
+    padding: 1em 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions-container div i {
+    color: white;
+    padding-right: 5px;
+}
+
+.actions-container div i:hover {
+    color: #dbdbdb;
+}
+
+.heading-3 {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.4em;
+}
+
+.text p {
+    font-size: 0.9em;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+strong {
+    font-family: "Times New Roman", serif;
+}
+
+.dot.active {
+    background-color: #007bff;
+}
+
+@media screen and (min-width:768px) {
+    .why-us-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .why-us-carousel {
+        flex: 1 1 50%;
+    }
+
+    .carousel-container {
+        width: 300px;
+        height: 550px;
+    }
+
+    .why-us-text {
+        flex: 1 1 50%;
+    }
+
+    .why-us-text p {
+        font-size: 1.3rem;
+        padding: 1em 2em;
+        line-height: 1.5;
+    }
+
+    .insta-account,
+    .actions-container {
+        height: 50px;
+    }
+
+    .arrow-container {
+        right: 1em;
+    }
+
+    .insta-account a {
+        font-size: 15px;
+    }
+
+    .pagination {
+        bottom: 60px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .carousel-container {
+        width: 400px;
+        height: 700px;
+        border-radius: 30px;
+    }
+
+    .why-us-text p {
+        font-size: 1.5rem;
+        padding: 1em 3em;
+        line-height: 1.7;
+    }
+
+
+    .insta-account,
+    .actions-container {
+        height: 60px;
+    }
+
+    .arrow-container {
+        right: 1em;
+    }
+
+    .insta-account a {
+        font-size: 20px;
+    }
+
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .heading-3 {
+        font-size: 2em;
+        margin-bottom: 2rem;
+    }
+
+    .text p {
+        font-size: 1.2em;
+    }
+
+    .actions-container div i {
+        font-size: 1.5em;
+        padding-right: 15px;
+    }
+
+    .pagination {
+        bottom: 70px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+    }
+}

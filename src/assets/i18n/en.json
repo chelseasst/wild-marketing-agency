@@ -1,0 +1,155 @@
+{
+    "header": {
+        "aboutUs": "About us",
+        "ourServices": "Our Services",
+        "contactUs": "Contact us"
+    },
+    "home": {
+        "carousel1": "Positive impact",
+        "carousel2": "Power Up Your Brand",
+        "carousel3": "Creativity",
+        "carousel4": "Elevate to Engage",
+        "carousel5": "Your Brand, Our Mission",
+        "carousel6": "Innovate, Engage, Grow",
+        "carousel7": "Where Vision Becomes Reality",
+        "carousel8": "Success Starts Here",
+        "carousel9": "Ideas with Impact",
+        "heading": "Marketing is not easy anymore, let us help you stand out",
+        "desc": "Building the best strategy for your business",
+        "contactBtn": "Contact us"
+    },
+    "services": {
+        "heading": "What can we do for you?",
+        "brandAwarenessTitle": "Brand Awareness",
+        "brandAwarenessDesc": "Looking for results that matter? We bring expertise, creativity, and a personal touch to deliver services tailored to your needs. Elevate your experience and watch your goals turn into reality.",
+        "leadGenerationTitle": "Lead Generation",
+        "leadGenerationDesc": "Ready to grow your customer base? Our lead generation services are designed to attract, engage, and convert. We target the right audience, capture high-quality leads, and help you turn prospects into loyal customers.",
+        "contentCreationTitle": "Content Creation",
+        "contentCreationDesc": "Need content that stops the scroll? We’ve got you covered. From eye-catching visuals to engaging posts, we create content that sparks conversations and connects with your audience.",
+        "performanceMarketingTitle": "Performance Marketing",
+        "performanceMarketingDesc": "We’re all about results that matter. From crafting targeted campaigns to analyzing performance, we make sure every click and impression brings value to your brand. Let’s turn those views into loyal customers and that ad spend into real growth.",
+        "emailMarketingTitle": "Email Marketing",
+        "emailMarketingDesc": "Stay top-of-mind with your audience. Our email marketing services craft personalized campaigns that nurture relationships, increase engagement, and drive sales. From automation to segmentation. Let's turn your subscribers into loyal customers.",
+        "marketingStrategyTitle": "Marketing Strategy",
+        "marketingStrategyDesc": "Without a clear strategy, even the best ideas fall short. Our marketing strategy services provide a tailored roadmap to guide your business toward growth. From market research to execution, we create a plan that aligns with your goals and maximizes your impact."
+    },
+    "actionBanner": {
+        "text": "Take the first step now *"
+    },
+    "quoteBanner": {
+        "text": "In an ever-changing world, we anchor to",
+        "button": "Send us an email",
+        "quotes": {
+            "0": "meaningful actions",
+            "1": "positive content",
+            "2": "out-of-the-box ideas",
+            "3": "responsible communication"
+        }
+    },
+    "contactUs": {
+        "heading": "Want to know more about us?",
+        "subheading": "Because we want to know more about you.",
+        "firstNameLabel": "First name",
+        "firstNameRequired": "First name is required",
+        "lastNameLabel": "Last name",
+        "lastNameRequired": "Last name is required",
+        "emailLabel": "Email",
+        "emailRequired": "Email is required",
+        "phoneLabel": "Phone",
+        "phoneRequired": "Phone number is required",
+        "companyNameLabel": "Company name (Optional)",
+        "messageLabel": "How can we help you?",
+        "messagePlaceholder": "Message / Questions / Wishes",
+        "buttonText": "Submit",
+        "errorMessage1": "Failed to send the message.",
+        "errorMessage2": "We will be glad if you just call us :)",
+        "errorMessage3": "+359 879 373 913",
+        "successMessage1": "Your Message was Successfully sent :)",
+        "successMessage2": "Expect an email or a call back from us in the next 24 hours."
+    },
+    "whyUs": {
+        "heading": "Why Us?",
+        "text1": "At Wild Marketing Agency were not just another marketing team-were a group of motivated, creative, and driven young professionals with a track record of success. Our experience with brands in B2B and B2C has taught us what it takes to deliver impactful results. We combine fresh perspectives with proven expertise to bring your business the attention, growth, and success it deserves.",
+        "text2": "Choose Wild Marketing Agency if you're ready to work with a team that brings fresh ideas and a strong work ethic. Let's create something extraordinary together.",
+        "instagram": "wild_marketing_agency",
+        "carousel": {
+            "item1": {
+                "title": "Because we aim for positive marketing",
+                "description": "We believe in empowering businesses with marketing that is ethical and impactful."
+            },
+            "item2": {
+                "title": "Because our vision is different",
+                "description": "We see marketing as more than just a sales tool; it’s about building relationships."
+            },
+            "item3": {
+                "title": "Because we drive results",
+                "description": "Our strategies focus on delivering measurable, sustainable results for your business."
+            },
+            "item4": {
+                "title": "Because we innovate continuously",
+                "description": "Our team stays on top of trends to ensure your brand is always ahead."
+            },
+            "item5": {
+                "title": "Because we prioritize customer relationships",
+                "description": "Your customers are at the heart of everything we do."
+            }
+        }
+    },
+    "steps": {
+        "title": "What are the next steps?",
+        "step1": {
+            "title": "Meeting",
+            "explanation": "We get to know your brand, your goals and your vision. It's all about understanding how we can help you grow."
+        },
+        "step2": {
+            "title": "Blueprint",
+            "explanation": "We craft a customized plan tailored to your needs. We'll present creative solutions designed to elevate your digital presence and make a real impact."
+        },
+        "step3": {
+            "title": "Final Meeting",
+            "explanation": "Once we align on the strategy, we become your dedicated partners. Our team is here to work alongside you, driving your brand forward with passion and innovation."
+        },
+        "step4": {
+            "title": "Working together",
+            "explanation": "Time to turn ideas into action. We execute the plan, measure the results, and keep optimizing to ensure your brand's success in the digital space."
+        }
+    },
+    "facts": {
+        "title": "We help ambitious companies meet & exceed their goals with",
+        "fact1": {
+            "heading": "500К",
+            "subheading": "/videos views",
+            "text": "Delivered over 500 000 views for one of our clients by crafting engaging, humor-driven content designed to captivate their audience. Each piece of content was strategically created to prompt a specific action, driving measurable engagement and results."
+        },
+        "fact2": {
+            "heading": "8.0/ROAS",
+            "subheading": "",
+            "text": "Summer week campaign for e-commerce brand with budget 500EUR and we generate over 4000EUR and 50+ purchases. Which means that for every 1EUR spent we generated 8EUR."
+        },
+        "fact3": {
+            "heading": "25 000",
+            "subheading": "page views",
+            "text": "25 000 page views events for a specific campaign for 1 month. We used to manage Google ads (Search ads and Pmax ads) with average CPC 0.27BGN"
+        },
+        "fact4": {
+            "heading": "100",
+            "subheading": "leads",
+            "text": "We bet on pin/targeted locations, look alike audiences, good copywriting and good banners with CTA’s. We use to manage META ads for brand awarness and we generated over 100 leads, for just 3 week campaign"
+        }
+    },
+    "footer": {
+        "logoAlt": "Wild Marketing Agency Logo",
+        "socialsTitle": "Our Socials",
+        "socialsDescription": "Our goal is to keep you updated and entertained",
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "contactTitle": "Contact",
+        "email": "wildmarketingagency&#64;gmail.com",
+        "phone": "(359) 879-373-913",
+        "pexels": "Some images are licensed from Pexels."
+    },
+    "languageSelector": {
+        "english": "English",
+        "bulgarian": "Bulgarian"
+    }
+}

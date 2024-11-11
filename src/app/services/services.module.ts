@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicesComponent } from './services/services.component';
-import { ServiceComponent } from './services/service/service.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
 @NgModule({
   declarations: [
-    ServicesComponent,
-    ServiceComponent
+    ServicesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,TranslateModule
   ],
-  exports:[ServicesComponent]
+  exports: [ServicesComponent]
 })
 export class ServicesModule { }

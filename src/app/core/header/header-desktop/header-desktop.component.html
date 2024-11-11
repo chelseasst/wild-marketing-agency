@@ -1,16 +1,20 @@
 <header class="header-desktop">
     <div class="logo-container">
-        <a href="">
-            <img src="assets/images/wild-logo.png" alt="Wild Marketing Agency Logo">
+        <a href="" id="logo">
+            <img src="assets/images/WM-logo.png" alt="Wild Marketing Agency Logo">
         </a>
     </div>
-
+    <div class="language-selector">
+        <button (click)="changeLanguage('en')">{{ 'languageSelector.english' | translate }}</button>
+        <button (click)="changeLanguage('bg')">{{ 'languageSelector.bulgarian' | translate }}</button>
+    </div>
     <nav class="nav">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-us">About us</a></li>
-            <li><a href="#our-services">Our Services</a></li>
-            <li><a href="#contact-us">Contact us</a></li>
+            <li><button (click)="scrollTo('about-us')">{{ 'header.aboutUs' | translate }}</button></li>
+            <li><button (click)="scrollTo('our-services')">{{ 'header.ourServices' | translate }}</button>
+            </li>
+            <li><button (click)="scrollTo('contact-us')">{{ 'header.contactUs' | translate }}</button>
+            </li>
         </ul>
     </nav>
 </header>

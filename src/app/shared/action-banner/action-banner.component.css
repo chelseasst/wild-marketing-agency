@@ -1,0 +1,32 @@
+.action-banner-container {
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+
+.action-banner-container p {
+    font-size: 1.8rem;
+    padding-right: 5px;
+    transform: translateX(0);
+    white-space: nowrap;
+    animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (min-width:950px) {
+    .action-banner-container p {
+        font-size: 2rem;
+    }
+}

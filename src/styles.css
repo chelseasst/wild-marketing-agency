@@ -1,46 +1,214 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+body {
     font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
     font-size: 18px;
     font-weight: 300;
     margin: 0;
     padding: 0;
+    background-color: #ece8dd96;
+    color: var(--main-font-color);
 }
+
+:root {
+    --main-bg-color: #ece8dd;
+    --main-font-color: #1a3a18;
+    --accent-color: #e6c868;
+    --secondary-color: #414345;
+}
+
 html {
-    font-size: 100%; /* Set base font size to 16px */
+    font-size: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 * {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
 }
+
 a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit color from parent */
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit color from parent */
     cursor: pointer;
 }
+
 button {
-    background: none; /* Remove default button background */
-    border: none; /* Remove default border */
-    padding: 0; /* Remove default padding */
-    font: inherit; /* Inherit font properties */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background: none;
+    /* Remove default button background */
+    border: none;
+    /* Remove default border */
+    padding: 0;
+    /* Remove default padding */
+    font: inherit;
+    /* Inherit font properties */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    color: inherit;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1.3em;
     font-weight: 300;
+    color: var(--main-font-color);
+    font-family: "Yeseva One", serif;
 }
-h1{
+
+h1 {
     font-size: 26px;
 }
-ul, ol {
-    list-style: none; /* Remove default list styles */
+
+ul,
+ol {
+    list-style: none;
+    /* Remove default list styles */
 }
+
 img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
 }
-input, textarea {
-    font-family: inherit; /* Inherit font properties */
-    font-size: inherit; /* Inherit font size */
+
+input,
+textarea {
+    font-family: inherit;
+    /* Inherit font properties */
+    font-size: inherit;
+    /* Inherit font size */
+}
+
+i {
+    font-family: "FontAwesome";
+}
+
+.heading-2 {
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Keyframes */
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes dropBounce {
+    0% {
+        opacity: 1;
+        transform: translateY(-100%);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fallLetter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: rotateX(-90deg);
+        /* Start flipped out */
+    }
+
+    40% {
+        transform: rotateX(0);
+        /* Flip in */
+    }
+
+    60% {
+        transform: rotateX(0);
+        /* Stay */
+    }
+
+    100% {
+        transform: rotateX(90deg);
+        /* Flip out */
+    }
+}
+
+
+@media screen and (min-width:700px) {
+    .heading-2 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .heading-2 {
+        font-size: 58px;
+        padding-bottom: 3rem;
+    }
 }

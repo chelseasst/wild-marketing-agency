@@ -1,0 +1,26 @@
+<section class="steps-section">
+    <h2 class="heading-2">{{ 'steps.title' | translate }}</h2>
+    <div class="desktop">
+      <div class="titles-container">
+        <ul class="titles-ul">
+          <li>{{ 'steps.step1.title' | translate }}</li>
+          <li>{{ 'steps.step2.title' | translate }}</li>
+          <li>{{ 'steps.step3.title' | translate }}</li>
+          <li>{{ 'steps.step4.title' | translate }}</li>
+        </ul>
+        <ul #steps class="steps-num">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+        <ul class="steps-explanations" [ngClass]="{ 'bg-font': isBulgarian }">
+          <li>{{ 'steps.step1.explanation' | translate }}</li>
+          <li>{{ 'steps.step2.explanation' | translate }}</li>
+          <li>{{ 'steps.step3.explanation' | translate }}</li>
+          <li>{{ 'steps.step4.explanation' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  

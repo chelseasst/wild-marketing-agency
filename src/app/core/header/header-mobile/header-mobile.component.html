@@ -1,24 +1,28 @@
 <header class="header-mobile">
     <div class="logo-container">
-        <a href="">
-            <img src="assets/images/wild-logo.png" alt="Wild Marketing Agency Logo">
+        <a href="" id="logo">
+            <img src="assets/images/WM-logo.png" alt="Wild Marketing Agency Logo">
         </a>
     </div>
-
-    <button class="menu-toggle" (click)="toggleNav()">
-        <a href="#"><img src="assets/images/menu-icon.png" alt=""></a>
-    </button>
-
-    <nav class="nav" *ngIf="isNavOpen">
+    <a class="menu-toggle" (click)="toggleNav($event)">
+        <img src="assets/images/menu-icon.png" alt="Menu">
+    </a>
+    <nav class="nav" [ngClass]="{ 'nav-open': isNavOpen }">
         <ul>
-            <li><a href="#home" (click)="toggleNav()">Home</a></li>
-            <li><a href="#about-us" (click)="toggleNav()">About us</a></li>
-            <li><a href="#our-services" (click)="toggleNav()">Our Services</a></li>
-            <li><a href="#contact-us" (click)="toggleNav()">Contact us</a></li>
+            <li><button (click)="scrollTo('about-us')">{{ 'header.aboutUs' |
+                    translate }}</button></li>
+            <li><button (click)="scrollTo('our-services')">{{
+                    'header.ourServices' | translate }}</button></li>
+            <li><button (click)="scrollTo('contact-us')">{{ 'header.contactUs' | translate }}</button></li>
         </ul>
     </nav>
-
-    <button class="close-icon-container" *ngIf="isNavOpen" (click)="toggleNav()">
-        <a href=""><img src="assets/images/close-menu.png" alt=""></a>
-    </button>
+    <div class="close-icon-container" *ngIf="isNavOpen" (click)="toggleNav()">
+        <button><img src="assets/images/close-menu.png" alt=""></button>
+    </div>
 </header>
+<div class="container-lng">
+    <div class="language-selector">
+        <button (click)="changeLanguage('en')">{{ 'languageSelector.english' | translate }}</button>
+        <button (click)="changeLanguage('bg')">{{ 'languageSelector.bulgarian' | translate }}</button>
+    </div>
+</div>

@@ -1,0 +1,170 @@
+.contact-us-section {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 400;
+    padding: 4rem 1rem;
+}
+
+.form-container {
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.container {
+    margin-bottom: 0.8rem;
+}
+
+.heading-2 {
+    text-align: center;
+}
+
+.heading-3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.6rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    min-height: 120px;
+}
+
+.form-group textarea:focus,
+.form-group input:focus {
+    border-color: var(--main-font-color);
+}
+
+.error {
+    color: rgb(180, 1, 1);
+    font-size: 0.7rem;
+    font-family: sans-serif;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+#submit-btn {
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid var(--main-font-color);
+    color: var(--main-font-color);
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#submit-btn:hover {
+    color: white;
+    background: var(--main-font-color);
+}
+
+#submit-btn:active {
+    letter-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.onclick {
+    width: 40px;
+    border-width: 3px;
+    animation: rotating 2s 0.25s linear infinite;
+}
+
+.onclick:hover {
+    color: var(--main-font-color);
+    background: white;
+}
+
+.validate {
+    color: white;
+    background: var(--main-font-color);
+}
+
+.validate:after {
+    padding-left: 5px;
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+
+.error-message {
+    color: rgb(180, 1, 1);
+    padding-top: 10px;
+}
+
+.success-message,
+.success-message {
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(11, 98, 11);
+
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .group1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .container {
+        flex: 1 1 40%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .error {
+        font-size: 0.8rem;
+    }
+}

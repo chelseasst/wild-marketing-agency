@@ -1,3 +1,37 @@
-<app-header></app-header>
-<app-home></app-home>
-<app-services></app-services>
+<main>
+    <app-header (navigateToSection2)="scrollToSection($event)"></app-header>
+
+    <div id="home" class="section">
+        <app-home (navigateToSection2)="scrollToSection($event)"></app-home>
+    </div>
+
+    <div id="our-services" #ourServices class="section">
+        <app-services></app-services>
+    </div>
+
+    <div id="about-us" #aboutUs class="section">
+        <app-why-us></app-why-us>
+    </div>
+
+    <div id="banner-quote" class="section">
+        <app-banner-quote (navigateToSection2)="scrollToSection($event)"></app-banner-quote>
+    </div>
+
+    <div id="steps" class="section">
+        <app-steps></app-steps>
+    </div>
+
+    <div id="facts" class="section">
+        <app-facts></app-facts>
+    </div>
+
+    <div id="contact-us" #contactUs class="section">
+        <app-action-banner></app-action-banner>
+    </div>
+
+    <div id="contact" class="section">
+        <app-contact-us></app-contact-us>
+    </div>
+
+    <app-footer></app-footer>
+</main>

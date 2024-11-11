@@ -1,0 +1,35 @@
+.quote-banner-container {
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+}
+
+.heading-2 {
+    line-height: 1.8;
+    max-width: 80%;
+}
+
+.quote {
+    display: inline-block;
+    background-color: var(--main-font-color);
+    color: var(--main-bg-color);
+    color: white;
+    padding: 0.1rem;
+    animation: slideIn 2s ease-in-out infinite;
+}
+
+.send-email {
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.send-email:hover {
+    transform: translateX(15px)
+}
+
+@media screen and (min-width:700px) {
+    .quote-banner-container {
+        padding: 9rem 3.5rem;
+    }
+}

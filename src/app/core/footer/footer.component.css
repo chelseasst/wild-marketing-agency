@@ -1,0 +1,89 @@
+footer {
+    width: 100%;
+    background-color: rgb(71, 59, 36);
+    background-image: url('./../../../assets/images/lion-footer.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>div {
+    text-align: center;
+}
+
+#logo {
+    z-index: 500;
+    width: 150pc;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+}
+
+i {
+    padding-right: 10px;
+}
+
+.logo-container {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.socials-container p {
+    margin-bottom: 1rem;
+}
+
+.socials-container a,.contact-container p {
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+.copyright-wrapper {
+    margin-top: 1.5rem;
+}
+
+#copyright-text {
+    font-size: 0.8rem;
+}
+
+#pexels-licensed {
+    font-size: 0.6rem;
+}
+
+@media screen and (min-width:768px) {
+    .content-wrapper {
+        flex-direction: row;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .content-wrapper {
+        justify-content: space-between;
+        padding: 2rem 0rem;
+    }
+
+    .socials-container {
+        margin-left: 10rem;
+    }
+}

@@ -1,10 +1,23 @@
 <section class="home-section">
-    <div class="home-image-container">
-        <img src="assets/images/pexels-rocketmann-prod-9507087.jpg" alt="">
+    <div class="images-container">
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel__face"><span>{{ 'home.carousel1' | translate }}</span></div>
+                <div class="carousel__face"><span>{{ 'home.carousel2' | translate }}</span></div>
+                <div class="carousel__face"><span>{{ 'home.carousel3' | translate }}</span></div>
+                <div class="carousel__face"><span>{{ 'home.carousel4' | translate }}</span></div>
+                <div class="carousel__face"><span>{{ 'home.carousel5' | translate }}</span></div>
+                <div class="carousel__face"><span>{{ 'home.carousel6' | translate }}</span></div>
+                <div class="carousel__face"><span>{{ 'home.carousel7' | translate }}</span></div>
+                <div class="carousel__face"><span>{{ 'home.carousel8' | translate }}</span></div>
+                <div class="carousel__face"><span>{{ 'home.carousel9' | translate }}</span></div>
+            </div>
+        </div>
     </div>
+
     <div class="heading-container">
-        <h1 class="heading-1">Marketing is not easy anymore, let us help you stand out</h1>
-        <p class="desc">Building the best strategy for your business</p>
-        <button class="contact-us-btn">Contact us</button>
+        <h1 class="heading-1">{{ 'home.heading' | translate }}</h1>
+        <p class="desc">{{ 'home.desc' | translate }}</p>
+        <button class="contact-us-btn" (click)="scrollTo('contact-us')">{{ 'home.contactBtn' | translate }}</button>
     </div>
 </section>
