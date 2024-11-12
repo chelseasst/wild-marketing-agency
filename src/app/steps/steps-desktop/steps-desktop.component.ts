@@ -17,7 +17,6 @@ export class StepsDesktopComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.languageService.language$.subscribe((lang) => {
       this.isBulgarian = lang === 'bg';
-      console.log('Language bg - desktop')
     })
   }
 

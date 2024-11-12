@@ -6,23 +6,19 @@
     overflow: hidden;
     gap: 2rem;
 }
-
 .heading-container {
     padding-left: 1rem;
     padding-right: 1rem;
     max-width: 600px;
 }
-
 .heading-1 {
     padding-bottom: 1rem;
     animation: slideUp 1.2s ease-out forwards;
 }
-
 .desc {
     padding-bottom: 1.5rem;
     animation: slideUp 1.2s ease-out forwards;
 }
-
 .contact-us-btn {
     padding: 0.8rem 1.8rem;
     background-color: var(--main-font-color);
@@ -31,17 +27,14 @@
     animation: slideUp 1.2s ease-out forwards;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
-
 .contact-us-btn:hover {
     color: black;
     background-color: rgb(236, 231, 231);
 }
-
 .images-container {
     margin-top: 2rem;
     margin-bottom: 11rem;
 }
-
 .container {
     position: relative;
     margin: 0 auto;
@@ -49,14 +42,12 @@
     perspective: 700px;
     color: rgba(255, 255, 255, 0.82);
 }
-
 .carousel {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     animation: rotate360 60s infinite forwards linear;
 }
-
 .carousel__face {
     position: absolute;
     width: 160px;
@@ -66,32 +57,26 @@
     display: flex;
     text-align: center;
 }
-
 span {
     margin: auto;
     font-size: 1rem;
 }
-
 .carousel__face:nth-child(1) {
     background-image: url("/assets/images/home/giraffe.jpg");
     transform: rotateY(0deg) translateZ(255px);
 }
-
 .carousel__face:nth-child(2) {
     background-image: url("/assets/images/home/camera.jpeg");
     transform: rotateY(40deg) translateZ(255px);
 }
-
 .carousel__face:nth-child(3) {
     background-image: url("/assets/images/home/crew.jpeg");
     transform: rotateY(80deg) translateZ(255px);
 }
-
 .carousel__face:nth-child(4) {
     background-image: url("/assets/images/home/street.jpg");
     transform: rotateY(120deg) translateZ(255px);
 }
-
 .carousel__face:nth-child(5) {
     background-image: url("/assets/images/home/laptop.jpg");
     transform: rotateY(160deg) translateZ(255px);
@@ -111,12 +96,10 @@ span {
     background-image: url("/assets/images/home/quote.jpeg");
     transform: rotateY(280deg) translateZ(255px);
 }
-
 .carousel__face:nth-child(9) {
     background-image: url("/assets/images/home/camera2.jpeg");
     transform: rotateY(320deg) translateZ(255px);
 }
-
 @keyframes rotate360 {
     from {
         transform: rotateY(0deg);
@@ -126,150 +109,116 @@ span {
         transform: rotateY(-360deg);
     }
 }
-
 @media screen and (min-width:768px) {
     .heading-1 {
         font-size: 2.3rem;
     }
-
     .heading-container {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
     .container {
         perspective: 700px;
     }
-
 }
 
 @media screen and (min-width:1024px) {
     .heading-1 {
         font-size: 2.3rem;
     }
-
     .container {
         perspective: 1500px;
     }
-
     .carousel__face {
         width: 190px;
         height: 143.5px;
     }
-
     .carousel__face:nth-child(1) {
         transform: rotateY(0deg) translateZ(330px);
     }
-
     .carousel__face:nth-child(2) {
         transform: rotateY(40deg) translateZ(330px);
     }
-
     .carousel__face:nth-child(3) {
         transform: rotateY(80deg) translateZ(330px);
     }
-
     .carousel__face:nth-child(4) {
         transform: rotateY(120deg) translateZ(330px);
     }
-
     .carousel__face:nth-child(5) {
         transform: rotateY(160deg) translateZ(330px);
     }
-
     .carousel__face:nth-child(6) {
         transform: rotateY(200deg) translateZ(330px);
     }
-
     .carousel__face:nth-child(7) {
         transform: rotateY(240deg) translateZ(330px);
     }
-
     .carousel__face:nth-child(8) {
         transform: rotateY(280deg) translateZ(330px);
     }
-
     .carousel__face:nth-child(9) {
         transform: rotateY(320deg) translateZ(330px);
-
     }
 }
-
 @media screen and (min-width:1400px) {
     .home-section {
         flex-direction: row-reverse;
         align-items: baseline;
     }
-
     .heading-1 {
         font-size: 2.8rem;
     }
-
     .heading-container {
         padding: 5rem 5rem 0 2rem;
     }
-
     .heading-container {
         padding: 5rem 3rem;
         flex: 1 30%;
     }
-
     .images-container {
         flex: 1 70%;
         margin-top: 0;
         margin-bottom: 0;
     }
-
     .container {
         width: 320px;
         perspective: 1300px;
     }
-
     .carousel__face {
         position: absolute;
         width: 300px;
         height: 187px;
     }
-
     span {
         margin: auto;
         font-size: 1.7rem;
     }
-
     .carousel__face:nth-child(1) {
         transform: rotateY(0deg) translateZ(430px);
     }
-
     .carousel__face:nth-child(2) {
         transform: rotateY(40deg) translateZ(430px);
     }
-
     .carousel__face:nth-child(3) {
         transform: rotateY(80deg) translateZ(430px);
     }
-
     .carousel__face:nth-child(4) {
         transform: rotateY(120deg) translateZ(430px);
     }
-
     .carousel__face:nth-child(5) {
         transform: rotateY(160deg) translateZ(430px);
     }
-
     .carousel__face:nth-child(6) {
         transform: rotateY(200deg) translateZ(430px);
     }
-
     .carousel__face:nth-child(7) {
         transform: rotateY(240deg) translateZ(430px);
     }
-
     .carousel__face:nth-child(8) {
         transform: rotateY(280deg) translateZ(430px);
     }
-
     .carousel__face:nth-child(9) {
         transform: rotateY(320deg) translateZ(430px);
-
     }
 }

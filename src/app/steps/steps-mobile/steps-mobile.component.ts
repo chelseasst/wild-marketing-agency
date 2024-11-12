@@ -12,7 +12,6 @@ export class StepsMobileComponent {
   ngOnInit(): void {
     this.languageService.language$.subscribe((lang) => {
       this.isBulgarian = lang === 'bg';
-      console.log('Language bg - desktop')
     })
   }
 }
