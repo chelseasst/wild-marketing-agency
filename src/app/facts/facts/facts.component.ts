@@ -20,8 +20,8 @@ export class FactsComponent implements AfterViewInit {
   animateFallingLetters() {
     this.letters.forEach((letter, index) => {
       const letterElement = letter.nativeElement as HTMLElement;
-      letterElement.style.setProperty('--delay', `${index * 0.1}s`); // Set delay based on index
-      letterElement.classList.add('falling'); // Add class to trigger the animation
+      letterElement.style.setProperty('--delay', `${index * 0.1}s`);
+      letterElement.classList.add('falling');
     });
   }
   observeAnimatedElements() {
@@ -29,7 +29,7 @@ export class FactsComponent implements AfterViewInit {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           this.animateFallingLetters();
-          this.observeFactNumbers();
+          observer.unobserve(entry.target);
         }
       });
     }, {
