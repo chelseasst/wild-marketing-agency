@@ -2,6 +2,7 @@
 
 # Compiled output
 /dist
+!dist/**/*.webp
 /tmp
 /out-tsc
 /bazel-out

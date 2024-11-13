@@ -1,7 +1,7 @@
 footer {
     width: 100%;
     background-color: rgb(71, 59, 36);
-    background-image: url('./../../../assets/images/lion-footer.jpg');
+    background-image: url('./../../../assets/images/lion-footer.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.8;
@@ -51,10 +51,12 @@ i {
     margin-bottom: 1rem;
 }
 
-.socials-container a,.contact-container p {
+.socials-container a,
+.contact-container p {
     padding-bottom: 0.5rem;
     cursor: pointer;
 }
+
 .copyright-wrapper {
     margin-top: 1.5rem;
 }

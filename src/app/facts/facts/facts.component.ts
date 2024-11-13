@@ -43,12 +43,13 @@ export class FactsComponent implements AfterViewInit {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const elDirective = this.factDirectives.find(d => d.element === entry.target)
-          elDirective?.animateCount()
+          elDirective?.animateCount();
+          observer.unobserve(entry.target);
         }
       })
     })
     let arrayOfFacts = this.factDirectives.toArray();
-     arrayOfFacts.forEach(directive => {
+    arrayOfFacts.forEach(directive => {
       observer.observe(directive.element);
     })
   }
