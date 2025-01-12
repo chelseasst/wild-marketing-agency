@@ -20,7 +20,7 @@
 .titles-ul li:hover,
 .steps-num li:hover {
     background-color: #e7cd77;
-    cursor: pointer;
+    cursor: url('/assets/images/hand-cursor.svg'), auto;
 }
 
 .steps-num {

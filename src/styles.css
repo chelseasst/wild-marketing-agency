@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: #ece8dd96;
     color: var(--main-font-color);
+    cursor: url('/assets/images/custom-cursor.svg'), auto;
 }
 
 :root {
@@ -36,8 +37,7 @@ a {
     text-decoration: none;
     /* Remove underline */
     color: inherit;
-    /* Inherit color from parent */
-    cursor: pointer;
+    cursor: url('/assets/images/hand-cursor.svg'), auto;
 }
 
 button {
@@ -49,8 +49,7 @@ button {
     /* Remove default padding */
     font: inherit;
     /* Inherit font properties */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
+    cursor: url('/assets/images/hand-cursor.svg'), auto;
     color: inherit;
 }
 

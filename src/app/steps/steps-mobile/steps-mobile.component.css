@@ -36,7 +36,7 @@
     color: var(--main-font-color);
     background-color: var(--accent-color);
     border-radius: 50%;
-    cursor: pointer;
+    cursor: url('/assets/images/hand-cursor.svg'), auto;
     padding-top: 15px;
     font-size: 1.5rem;
 }

@@ -77,7 +77,7 @@
 }
 
 .profile-pic:hover {
-    cursor: pointer;
+    cursor: url('/assets/images/hand-cursor.svg'), auto;
 }
 
 .insta-account a {
@@ -91,7 +91,7 @@
 }
 
 .insta-account p:hover {
-    cursor: pointer;
+    cursor: url('/assets/images/hand-cursor.svg'), auto;
     text-decoration: underline;
 }
 
@@ -135,6 +135,7 @@
 .actions-container div i {
     color: white;
     padding-right: 5px;
+    cursor: url('/assets/images/custom-cursor.svg'), auto;
 }
 
 .actions-container div i:hover {
@@ -168,7 +169,6 @@
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
