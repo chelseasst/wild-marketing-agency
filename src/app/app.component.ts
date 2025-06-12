@@ -13,15 +13,15 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('aboutUs') aboutUs!: ElementRef;
   @ViewChild('contactUs') contactUs!: ElementRef;
   sections: { [key: string]: ElementRef } = {};
-  
+
   constructor(private translate: TranslateService, private scrollService: ScrollService) { }
-  
+
   ngOnInit() {
     const userLang = navigator.language.startsWith('bg') ? 'bg' : 'en';
     this.translate.setDefaultLang(userLang);
     this.translate.use(userLang);
   }
-  
+
   ngAfterViewInit() {
     this.sections = {
       'our-services': this.ourServices,
@@ -29,7 +29,6 @@ export class AppComponent implements AfterViewInit {
       'contact-us': this.contactUs,
     };
     this.scrollService.scrollObs$.subscribe((sectionId: string) => {
-      console.log(sectionId);
       let section = this.sections[sectionId];
       if (section) {
         section.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
