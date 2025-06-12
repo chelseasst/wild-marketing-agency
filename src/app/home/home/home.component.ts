@@ -1,5 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component } from '@angular/core';
+import { ScrollService } from 'src/app/scroll.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,9 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  @Output() navigateToSection2 = new EventEmitter<string>();
+  constructor(private scrollService: ScrollService) { }
   scrollTo(sectionId: string) {
-    this.navigateToSection2.emit(sectionId);
+    this.scrollService.scrollTo(sectionId);
   }
 
 }

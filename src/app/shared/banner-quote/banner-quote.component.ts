@@ -1,5 +1,6 @@
-import { AfterViewInit, Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { ScrollService } from 'src/app/scroll.service';
 
 @Component({
   selector: 'app-banner-quote',
@@ -7,15 +8,13 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./banner-quote.component.css']
 })
 export class BannerQuoteComponent implements AfterViewInit, OnDestroy {
-  @Output() navigateToSection2 = new EventEmitter<string>();
-
   quotes: string[] = [];
   currentQuote: string = '';
   private interval: any;
   private quoteIndex = 0;
 
-  constructor(private translate: TranslateService) { }
-  
+  constructor(private translate: TranslateService, private scrollService: ScrollService) { }
+
   ngAfterViewInit(): void {
     this.translate.get('quoteBanner.quotes').subscribe((quotes: any) => {
       this.quotes = Object.values(quotes);
@@ -33,6 +32,6 @@ export class BannerQuoteComponent implements AfterViewInit, OnDestroy {
     clearInterval(this.interval);
   }
   scrollTo(sectionId: string) {
-    this.navigateToSection2.emit(sectionId);
+    this.scrollService.scrollTo(sectionId);
   }
 }

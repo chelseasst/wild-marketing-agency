@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { ScrollService } from './scroll.service';
 
 @Component({
   selector: 'app-root',
@@ -12,23 +13,27 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('aboutUs') aboutUs!: ElementRef;
   @ViewChild('contactUs') contactUs!: ElementRef;
   sections: { [key: string]: ElementRef } = {};
-  constructor(private translate: TranslateService) { }
+  
+  constructor(private translate: TranslateService, private scrollService: ScrollService) { }
+  
+  ngOnInit() {
+    const userLang = navigator.language.startsWith('bg') ? 'bg' : 'en';
+    this.translate.setDefaultLang(userLang);
+    this.translate.use(userLang);
+  }
+  
   ngAfterViewInit() {
     this.sections = {
       'our-services': this.ourServices,
       'about-us': this.aboutUs,
       'contact-us': this.contactUs,
     };
-  }
-  scrollToSection(sectionId: string) {
-    let section = this.sections[sectionId];
-    if (section) {
-      section.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-  ngOnInit() {
-    const userLang = navigator.language.startsWith('bg') ? 'bg' : 'en';
-    this.translate.setDefaultLang(userLang);
-    this.translate.use(userLang);
+    this.scrollService.scrollObs$.subscribe((sectionId: string) => {
+      console.log(sectionId);
+      let section = this.sections[sectionId];
+      if (section) {
+        section.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    })
   }
 }

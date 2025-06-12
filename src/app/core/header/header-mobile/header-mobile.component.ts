@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Output } from "@angular/core";
+import { Component } from "@angular/core";
 import { LanguageService } from "src/app/language.service";
+import { ScrollService } from "src/app/scroll.service";
 
 @Component({
     selector: 'app-header-mobile',
@@ -8,11 +9,10 @@ import { LanguageService } from "src/app/language.service";
 })
 export class HeaderMobileComponent {
     isNavOpen = false;
-    @Output() navigateToSection = new EventEmitter<string>();
-    constructor(private languageService: LanguageService) { }
+    constructor(private languageService: LanguageService, private scrollService: ScrollService) { }
     scrollTo(sectionId: string) {
         this.toggleNav();
-        this.navigateToSection.emit(sectionId);
+        this.scrollService.scrollTo(sectionId);
     }
     toggleNav(ev?: MouseEvent) {
         ev?.preventDefault()

@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Output } from "@angular/core";
+import { Component } from "@angular/core";
 import { LanguageService } from "src/app/language.service";
+import { ScrollService } from "src/app/scroll.service";
 
 @Component({
   selector: 'app-header-desktop',
@@ -7,10 +8,9 @@ import { LanguageService } from "src/app/language.service";
   styleUrls: ['header-desktop.component.css']
 })
 export class HeaderDektopComponent {
-  @Output() navigateToSection = new EventEmitter<string>();
-  constructor(private languageService: LanguageService) { }
+  constructor(private languageService: LanguageService, private scrollService: ScrollService) { }
   scrollTo(sectionId: string) {
-    this.navigateToSection.emit(sectionId);
+    this.scrollService.scrollTo(sectionId);
   }
 
   changeLanguage(language: string) {
