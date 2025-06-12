@@ -48,14 +48,14 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRN6V1F767"></script>
 
   <script>
-    window.addEventListener('CookieConsentDeclaration', function () {
-      if (Cookiebot && Cookiebot.consents && Cookiebot.consents.statistics) {
+    gtag('js', new Date());
+    gtag('config', 'G-WRN6V1F767');
+    window.addEventListener('CookiebotOnConsentReady', function () {
+      if (Cookiebot && Cookiebot.consented) {
         gtag('consent', 'update', {
           ad_storage: 'granted',
           analytics_storage: 'granted'
         });
-        gtag('js', new Date());
-        gtag('config', 'G-WRN6V1F767');
       }
     });
   </script>
