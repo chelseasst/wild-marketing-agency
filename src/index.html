@@ -45,17 +45,18 @@
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="aaaedead-bb44-4f93-b4e8-a4f23d1f3e5c"
     data-blockingmode="auto" type="text/javascript" async></script>
 
+  <!-- loads google analytics script from google tag manager's server -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRN6V1F767"></script>
 
   <script>
-    gtag('js', new Date());
-    gtag('config', 'G-WRN6V1F767');
     window.addEventListener('CookiebotOnConsentReady', function () {
       if (Cookiebot && Cookiebot.consented) {
+        gtag('js', new Date());
         gtag('consent', 'update', {
           ad_storage: 'granted',
           analytics_storage: 'granted'
         });
+        gtag('config', 'G-WRN6V1F767');
       }
     });
   </script>
