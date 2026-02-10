@@ -39,3 +39,15 @@
 .language-selector button:hover {
     background-color: rgba(17, 84, 16, 0.352);
 }
+
+@media screen and (min-width:2000px) {
+    .logo-container {
+        width: 320px;
+    }
+
+    .language-selector button,
+    .nav ul li {
+        font-size: 2.2rem;
+        padding: 1.4rem;
+    }
+}
