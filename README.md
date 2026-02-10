@@ -1,15 +1,16 @@
 
 # Wild Marketing Agency – Website 🦁
 
-Live site: [`https://wildmarketingagency.com/`](https://wildmarketingagency.com/)
+Live site: (https://marketing-portfolio-gi2c.vercel.app/)
 
-Modern, multilingual marketing agency website built with Angular 16, deployed on Firebase Hosting, featuring EmailJS-powered contact forms, responsive layout, and GDPR-compliant cookie consent via Cookiebot with Google Consent Mode.
+Modern, multilingual marketing agency website built with Angular 16, deployed on Vercel, featuring EmailJS-powered contact forms, responsive layout, and GDPR-compliant cookie consent via Cookiebot with Google Consent Mode.
+⚠️ Previously deployed on Firebase Hosting at wildmarketingagency.com, but now live via Vercel only.
 
 ## Tech stack
 - **Framework**: Angular 16 (CLI 16.2.x)
 - **i18n**: `@ngx-translate/core` + JSON locale files under `src/assets/i18n/`
 - **Email**: `@emailjs/browser` for contact form delivery
-- **Hosting**: Firebase Hosting (SPA rewrites configured)
+- **Hosting**: Vercel (SPA, Angular production build); Before -> Firebase Hosting (SPA rewrites configured)
 - **Cookie consent**: Cookiebot + Google Consent Mode (v2)
 
 ## Features
@@ -26,14 +27,13 @@ Modern, multilingual marketing agency website built with Angular 16, deployed on
 - `src/app/language.service.ts` – Language switching via `ngx-translate`
 - `src/app/email.service.ts` – EmailJS integration
 - `src/assets/i18n/` – Translation files (`en.json`, `bg.json`)
-- `firebase.json` – Firebase Hosting config (SPA rewrite to `index.html`)
 - `angular.json` – Build configuration (output to `dist/wild-marketing-agency`)
 
 ## Getting started
 ### Prerequisites
 - Node.js 18+
 - Angular CLI 16+ (`npm i -g @angular/cli`)
-- Firebase CLI (`npm i -g firebase-tools`) if you plan to deploy
+- Firebase CLI (`npm i -g firebase-tools`) *if you plan to deploy
 
 ### Install
 ```bash
@@ -66,12 +66,18 @@ What it does:
 - Sets **default denied** state for ad/analytics/storage until consent
 - On consent, updates Consent Mode and initializes analytics accordingly
 
-## Deployment (Firebase Hosting)
-The repo is configured for Firebase Hosting as a Single Page Application.
+## Deployment (Vercel)
+The website is now deployed as an Angular SPA on Vercel.
+Production build is located in dist/wild-marketing-agency.
+The repo can be configured for Firebase Hosting as a Single Page Application.
 
 
-### One-time setup
+### Deploy Steps (Vercel)
+```npm run build 
+vercel deploy --prod
+```
 ```bash
+#Previously, the project included Firebase Hosting config (firebase.json) for SPA rewrites.
 firebase login
 firebase init hosting  # if not already initialized
 ```
@@ -85,6 +91,7 @@ firebase init hosting  # if not already initialized
 - Angular CLI docs: [`https://angular.io/cli`](https://angular.io/cli)
 - ngx-translate: [`https://github.com/ngx-translate/core`](https://github.com/ngx-translate/core)
 - EmailJS SDK: [`https://www.emailjs.com/docs/sdk/installation/`](https://www.emailjs.com/docs/sdk/installation/)
+- Vercel Hosting: [`https://vercel.com/docs`](https://vercel.com/docs)
 - Firebase Hosting: [`https://firebase.google.com/docs/hosting`](https://firebase.google.com/docs/hosting)
 - Cookiebot: [`https://www.cookiebot.com/`](https://www.cookiebot.com/)
 
